@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  padding: 16px 80px;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  align-items: center;
+  position: relative;
+}
+
+.right ul li {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+header a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(180, 180, 180);
+  transition: color 0.3s;
+}
+
+header a:hover {
+  color: #00aaff;
+}
+
+.burger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.right.active {
+  display: flex;
+}
+
+/* Hero Section */
+.container {
+  background-image: url("images/steve-johnson-ZPOoDQc8yMw-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 660px;
+  color: rgb(239, 239, 239);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container-words {
+  max-width: 500px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.container h1 {
+  font-size: 66px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.container p {
+  color: #ddd;
+  font-size: 20px;
+  margin-bottom: 20px;
+  max-width: 700px;
+}
+
+.container button {
+  width: 180px;
+  height: 40px;
+  background-color: #00aaff;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container button:hover {
+  background-color: #0088cc;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(227, 237, 246);
+  padding-top: 50px;
+}
+.line {
+  display: flex;
+  gap: 4em;
+  margin: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  max-width: 200px;
+  padding: 15px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.box img {
+  max-width: 50px;
+}
+
+.info {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  background: whitesmoke;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+.info-left {
+  max-width: 400px;
+  line-height: 22px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.info img {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  gap: 10px;
+}
+footer img {
+  filter: invert(1);
+  padding: 0px 5px;
+}
+footer ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  padding: 0px 10px;
+}
+li {
+  list-style: none;
+}
+.foot3 {
+  border-top: 1px solid gray;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .info img {
+    max-width: 300px;
+  }
+}
+@media (max-width: 700px) {
+  .info img {
+    min-width: 330px;
+  }
+  .burger {
+    display: block;
+  }
+
+  .right {
+    display: none;
+    position: absolute;
+    top: 60px;
+    background-color: #121212;
+    width: 100%;
+    left: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
+  header {
+    padding: 15px 50px;
+  }
+
+  .right ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .right.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
